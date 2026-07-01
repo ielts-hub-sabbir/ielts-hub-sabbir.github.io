@@ -12,72 +12,43 @@
         .main-container { max-width: 800px; margin: 30px auto; padding: 0 15px; }
         .card { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: left; }
         .card h2 { color: #1a73e8; margin-top: 0; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; }
-        .btn { display: inline-block; padding: 10px 20px; font-size: 15px; font-weight: bold; border-radius: 6px; cursor: pointer; text-decoration: none; margin-top: 10px; border: none; }
-        .btn-free { background-color: #e8f0fe; color: #1a73e8; }
-        .btn-free:hover { background-color: #d2e3fc; }
-        .btn-paid { background-color: #28a745; color: white; }
-        .btn-paid:hover { background-color: #218838; }
-        .badge-free { background: #e6f4ea; color: #137333; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
-        .badge-paid { background: #fce8e6; color: #c5221f; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
-        .free-content { display: none; background: #fafafa; padding: 15px; margin-top: 15px; border-radius: 6px; border-left: 4px solid #1a73e8; }
+        .btn { display: inline-block; padding: 12px 22px; font-size: 15px; font-weight: bold; border-radius: 6px; cursor: pointer; text-decoration: none; margin-top: 10px; border: none; }
+        .btn-free { background-color: #28a745; color: white; }
+        .btn-free:hover { background-color: #218838; }
+        .badge-free { background: #e6f4ea; color: #137333; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; float: right; }
     </style>
 </head>
 <body>
 
 <div class="header">
     <h1>Sabbir's IELTS Hub 🎯</h1>
-    <p>আইএলটিএস ব্যান্ড ৮.০+ প্রস্তুতির সব ফ্রি ও প্রিমিয়াম মেটেরিয়ালস এখানে পাবেন</p>
+    <p>আইএলটিএস প্রস্তুতির সম্পূর্ণ ফ্রি পিডিএফ এবং কুইজ বই এখানে ডাউনলোড করুন</p>
 </div>
 
 <div class="main-container">
 
+    <!-- ⚡ ১. কুইজ বই সেকশন (সম্পূর্ণ ফ্রি) -->
     <div class="card">
-        <h2>১. আইএলটিএস রাইটিং টিপস <span class="badge-free">FREE</span></h2>
-        <p>সেন্টেন্স স্ট্রাকচার এবং ভোকাবুলারি উন্নত করার জন্য কিছু ফ্রি রিসোর্স নিচে দেওয়া হলো। কোনো পেমেন্ট ছাড়াই এটি দেখতে পারবেন।</p>
-        <button class="btn btn-free" onclick="toggleFreeContent()">এখানে ক্লিক করে ফ্রি পড়ুন</button>
-        
-        <div id="freeBox" class="free-content">
-            <h4>📝 গুরুত্বপূর্ণ টিপস:</h4>
-            <p>১. Simple বাক্যের পরিবর্তে Complex এবং Compound বাক্য বেশি ব্যবহার করুন।</p>
-            <p>২. একটি শব্দ বারবার ব্যবহার না করে সেটির Synonyms বা প্রতিশব্দ ব্যবহার করুন।</p>
-        </div>
+        <h2>🧠 IELTS Quiz Book <span class="badge-free">FREE</span></h2>
+        <p>আইএলটিএস প্র্যাকটিসের জন্য কুইজ বইয়ের সম্পূর্ণ পিডিএফ নিচে দেওয়া হলো। কোনো কোড ছাড়াই সরাসরি পড়ুন ও ডাউনলোড করুন।</p>
+        <a href="quiz.pdf" target="_blank" class="btn btn-free">📄 ফ্রি কুইজ বই ডাউনলোড করুন</a>
     </div>
 
+    <!-- 📚 ২. পার্ট ১ সেকশন (সম্পূর্ণ ফ্রি) -->
     <div class="card">
-        <h2>২. প্রিমিয়াম আইএলটিএস কমপ্লিট বুক 📚 <span class="badge-paid">PREMIUM</span></h2>
-        <p>এটি আমার তৈরি করা বিশেষ প্রিমিয়াম ই-বুক। যারা নিজে থেকে পেমেন্ট করবে, তারা সরাসরি লিংক পেয়ে যাবে। আর আমি যাদেরকে ফ্রিতে এক্সেস দেবো, তারা সরাসরি পাসওয়ার্ড দিয়ে ডাউনলোড করতে পারবে।</p>
-        
-        <a href="https://gumroad.com/" target="_blank" class="btn btn-paid">নিজে থেকে পেমেন্ট করে কিনুন (Automatic)</a>
-        
-        <button class="btn btn-free" onclick="checkVIPAccess()" style="margin-left: 10px;">আমি যাকে ফ্রি অ্যাড করব (পাসওয়ার্ড দিয়ে)</button>
+        <h2>📖 IELTS Lesson - Part 01 <span class="badge-free">FREE</span></h2>
+        <p>আইএলটিএস ভোকাবুলারি ও রাইটিং-এর ১ম পার্টের ফ্রি পিডিএফ।</p>
+        <a href="part1.pdf" target="_blank" class="btn btn-free">📄 ফ্রি ডাউনলোড করুন (Part 1)</a>
+    </div>
+
+    <!-- 📚 ৩. পার্ট ২ সেকশন (সম্পূর্ণ ফ্রি) -->
+    <div class="card">
+        <h2>📖 IELTS Lesson - Part 02 <span class="badge-free">FREE</span></h2>
+        <p>আইএলটিএস ভোকাবুলারি ও রাইটিং-এর ২য় পার্টের ফ্রি পিডিএফ।</p>
+        <a href="part2.pdf" target="_blank" class="btn btn-free">📄 ফ্রি ডাউনলোড করুন (Part 2)</a>
     </div>
 
 </div>
-
-<script>
-    // ফ্রি কন্টেন্ট দেখানোর জাভাস্ক্রিপ্ট
-    function toggleFreeContent() {
-        var x = document.getElementById("freeBox");
-        if (x.style.display === "none" || x.style.display === "") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
-
-    // ফ্রি মেম্বার বা পাসওয়ার্ড ভেরিফিকেশন জাভাস্ক্রিপ্ট
-    function checkVIPAccess() {
-        var secretPassword = "SABBIR_VIP_FREE"; // এই পাসওয়ার্ডটি আপনি আপনার পছন্দের মানুষকে ফ্রিতে দেবেন
-        var userCode = prompt("আমি আপনাকে যে ফ্রি VIP কোডটি দিয়েছি, সেটি এখানে লিখুন:");
-        
-        if (userCode === secretPassword) {
-            alert("কোড সঠিক হয়েছে! আপনাকে ফ্রি ডাউনলোডের ড্রাইভে নিয়ে যাওয়া হচ্ছে...");
-            window.open("https://drive.google.com/", "_blank"); // এখানে আপনার গুগল ড্রাইভের আসল লিংকটি বসবে
-        } else if (userCode !== null) {
-            alert("দুঃখিত! কোডটি সঠিক নয়।");
-        }
-    }
-</script>
 
 </body>
 </html>
